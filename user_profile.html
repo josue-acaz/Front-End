@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-br">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+              
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+            <link rel="stylesheet" href="style/css/style.css"></link>
+            <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css">
+            <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+            <link rel="stylesheet" href="./style/css/evenl.css">
+            <link rel="stylesheet" href="./style/css/footer-with-button-logo.css">
+              
+            <!-- Fonte -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+            <title>Bootstrap Example</title>
+        </head>
+        <body>
+
+            <!-- NAVBAR -->
+                <nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar" style="background-color: #ffffff;">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <a class="navbar-brand" href="#">
+                            <img src="images/icon_evenl_v2.svg" width="50" height="50" alt="">
+                        </a>
+                      
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                
+                            <!-- LEFT -->
+                            <ul class="navbar-nav mr-auto">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control font-weight-bold  mr-sm-2" style="min-width:400px; min-height: 45px;" id="busca" type="search" placeholder="Buscar" aria-label="Search">
+                                    <span id="box_icone_busca">
+                                        <i id="icone_busca" class="fa fa-search fa-2x" onclick=""></i>
+                                    </span>
+                                </form>
+                            </ul>
+                
+                            <!-- RIGHT -->
+                            <ul class="navbar-nav nav-flex-icons">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Anuncie conosco</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ajuda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Cadastre-se</a>
+                                </li>
+                                <!--
+                                    <li class="nav-item"> 
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary btn-custom text-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-user fa-2x"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">Perfil</a>
+                                                  <a class="dropdown-item" href="#">Conta</a>
+                                                  <a class="dropdown-item" href="#">Sair</a>
+                                                </div>
+                                              </div>
+                                         
+                                </li>
+                                -->
+                            </ul>
+                
+                        </div>
+                    </nav>
+
+                    <hr>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Editar Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Segurança</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                          </div>
+
+                <div class="container bootstrap snippet">
+                    <div class="row">
+                          <div class="col-sm-10"><h1>User name</h1></div>
+                        <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
+                    </div>
+                    <div class="row">
+                          <div class="col-sm-3"><!--left col-->
+                              
+                
+                      <div class="text-center">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                        <h6>Upload a different photo...</h6>
+                        <input type="file" class="text-center center-block file-upload">
+                      </div></hr><br>
+                
+                               
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Website <i class="fa fa-link fa-1x"></i></div>
+                            <div class="panel-body"><a href="http://bootnipets.com">bootnipets.com</a></div>
+                          </div>
+                          
+                          
+                          <ul class="list-group">
+                            <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Shares</strong></span> 125</li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
+                          </ul> 
+                               
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Social Media</div>
+                            <div class="panel-body">
+                                <i class="fab fa-facebook-square fa-lg mr-2"></i><i class="fab fa-twitter-square fa-lg mr-2"></i><i class="fab fa-instagram fa-lg"></i>
+                            </div>
+                          </div>
+                          
+                        </div><!--/col-3-->
+                        <div class="col-sm-9">
+                            <!--
+                                
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                                <li><a data-toggle="tab" href="#messages">Menu 1</a></li>
+                                <li><a data-toggle="tab" href="#settings">Menu 2</a></li>
+                              </ul>
+                            -->
+                
+                              
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <hr>
+                                  <form class="form" action="##" method="post" id="registrationForm">
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="first_name"><h4>Primeiro Nome</h4></label>
+                                              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                            <label for="last_name"><h4>Sobrenome</h4></label>
+                                              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                                          </div>
+                                      </div>
+                          
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="phone"><h4>Sexo</h4></label>
+                                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                                          </div>
+                                      </div>
+                          
+                                      <div class="form-group">
+                                          <div class="col-xs-6">
+                                             <label for="mobile"><h4>Data de nascimento</h4></label>
+                                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="email"><h4>Endereço de Email</h4></label>
+                                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="email"><h4>Número de telefone</h4></label>
+                                              <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                                          </div>
+                                      </div>
+                                      <!--
+                                          <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="password"><h4>Password</h4></label>
+                                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                            <label for="password2"><h4>Verify</h4></label>
+                                              <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                                          </div>
+                                      </div>
+                                      -->
+                                      <div class="form-group">
+                                           <div class="col-xs-12">
+                                                <br>
+                                                  <button class="btn btn-lg btn-success" type="submit"><i class="fas fa-save"></i> Save</button>
+                                                   <button class="btn btn-lg btn-warning" type="reset"><i class="fas fa-retweet"></i> Reset</button>
+                                            </div>
+                                      </div>
+                                  </form>
+                              
+                              <hr>
+                              
+                             </div><!--/tab-pane-->
+                              </div><!--/tab-pane-->
+                          </div><!--/tab-content-->
+                    </div><!--/col-9-->
+                </div><!--/row-->
+
+
+<!--Footer-->
+<footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/icon_evenl_v2.svg" width="100" height="100" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Inicio</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Anuncie</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Sobre-nós</h5>
+                    <ul>
+                        <li><a href="#">Informações da Empresa</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Telefones</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fab fa-twitter-square fa-lg"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-square fa-lg"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <a href="#">
+                        <button type="button" class="btn btn-default">Contato</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 Copyright - EvenL</p>
+        </div>
+    </footer>
+<!--/.Footer-->
+
+
+            <script>
+                $(document).ready(function() {
+            
+                var readURL = function(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+        
+                        reader.onload = function (e) {
+                            $('.avatar').attr('src', e.target.result);
+                        }
+        
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+        
+                $(".file-upload").on('change', function(){
+                    readURL(this);
+                });
+                });
+            </script>
+
+                    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+        </body>
+
+</html>

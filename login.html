@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Template de login, usando Bootstrap.</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <link rel="stylesheet" href="style/css/style.css"></link>
+
+    <link rel="stylesheet" href="./style/css/footer-with-button-logo.css">
+
+    <link rel="stylesheet" href="./style/css/evenl.css">
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <!-- bg-gradient-primary -->
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar" style="background-color: #ffffff;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" href="#">
+                        <img src="images/icon_evenl_v2.svg" width="50" height="50" alt="">
+                    </a>
+                  
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            
+                        <!-- LEFT -->
+                        <ul class="navbar-nav mr-auto">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control font-weight-bold  mr-sm-2" style="min-width:400px; min-height: 45px;" id="busca" type="search" placeholder="Buscar" aria-label="Search">
+                                <span id="box_icone_busca">
+                                    <i id="icone_busca" class="fa fa-search fa-2x" onclick=""></i>
+                                </span>
+                            </form>
+                        </ul>
+            
+                        <!-- RIGHT -->
+                        <ul class="navbar-nav nav-flex-icons">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Anuncie conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ajuda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Cadastre-se</a>
+                            </li>
+                            <!--
+                                <li class="nav-item"> 
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary btn-custom text-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-user fa-2x"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Perfil</a>
+                                              <a class="dropdown-item" href="#">Conta</a>
+                                              <a class="dropdown-item" href="#">Sair</a>
+                                            </div>
+                                          </div>
+                                     
+                            </li>
+                            -->
+                        </ul>
+            
+                    </div>
+                </nav>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-4 text-center col-sm-1 col-lg-5 my-5">
+
+                <div class="card mb-4">
+                    <div class="card-body">   
+                            <form class="form-signin" id="formLogin">
+        
+                                <div class="btn-group-vertical btn-block btn-group-lg mb-1" role="group">
+                                    <a class="btn btn-primary" href="#"><i class="fab fa-facebook-square"></i> Entrar com Facebook</a>
+                                </div>
+                                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                                    <a class="btn btn-outline-warning" href="#"><i class="fab fa-google"></i> Entrar com Google</a>
+                                </div>
+        
+                                <hr>
+        
+                                <label for="inputEmail" class="sr-only">Endereço de email</label>
+        
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="far fa-user"></i></span>
+                                    </div>
+                                    <input id="inputEmail" type="text" class="form-control" placeholder="Nome de usuário" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+        
+                                <label for="inputPassword" class="sr-only">Senha</label>
+        
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></i></span>
+                                    </div>
+                                    <input id="inputPassword" type="password" class="form-control" placeholder="Senha" aria-label="Password" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Lembrar de mim
+                                    </label>
+                                </div>
+                            <button class="btn btn-lg btn-block" style="background-color: #649c19;" type="submit">Login</button>
+                        </form>
+                            
+                        <div class="btn-group btn-block btn-group-lg mb-1 my-3" role="group">
+                                
+                            <div class="mr-5">
+                                <p>Não tem uma conta?</p>
+                            </div>
+
+                            <div>
+                                <a class="btn btn-outline-info" href="signup_login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUTPUT JSON CADASTRO -->
+        <div>
+            <h3 id="response"></h3>
+        </div>
+
+    </div>
+
+ <!--Footer-->
+ <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/icon_evenl_v2.svg" width="100" height="100" alt="">
+                </div>
+                <div class="col-sm-2">
+                    <h5>Inicio</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Anuncie</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Sobre-nós</h5>
+                    <ul>
+                        <li><a href="#">Informações da Empresa</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Telefones</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fab fa-twitter-square fa-lg"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-square fa-lg"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <a href="#">
+                        <button type="button" class="btn btn-default">Contato</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 Copyright - EvenL</p>
+        </div>
+    </footer>
+<!--/.Footer-->
+
+    <!-- Seção de scripts -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+            (function($){
+                function processForm(e){
+                    $.ajax({
+                        url: 'http://localhost:3000/login',
+                        dataType: 'json',
+                        method: "POST",
+                        contentType: 'application/json',
+                        data: JSON.stringify( { "email": $('#inputEmail').val(), "password": $('#inputPassword').val() } ),
+                        processData: false,
+                        success: function( data, textStatus, jQxhr ){
+                            var authCustomer = {token: data.token, email: data.email, name: data.name};
+                            var jsonAux = JSON.stringify(authCustomer);
+                            window.localStorage.setItem('dataCustomer', jsonAux);
+                            window.location.href = "./has_logged_out.html";
+                        },
+                        error: function( jqXhr, textStatus, errorThrown ){
+                            console.log( errorThrown );
+                        }
+                    });
+        
+                    e.preventDefault();
+                }
+        
+                $('#formLogin').submit( processForm );
+            })(jQuery);
+    </script>
+
+  </body>
+</html>
